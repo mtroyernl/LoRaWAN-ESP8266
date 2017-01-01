@@ -18,7 +18,7 @@ The primary benefits of this build are as follows:
 In order to build the necessary two  devices, some basic soldering skills are required.  The total build time is around 3 hours.
 
 ### Limitations
-*This project is built using a single channel LoRaWAN gateway. Strictly-speaking, this is out-of-spec.  LoRaWAN specifications require at minimum 3 channels.   In order to use a single channel gateway, all nodes must include software modifications to limit usage of the same single channel as the gateway.*   
+*This project is built using a single channel LoRaWAN gateway. Strictly-speaking, this is out-of-spec.  LoRaWAN specifications require at minimum 3 channels.   In order to use a single channel gateway, all nodes must include software modifications to limit usage of the same single channel as the gateway.  If tested with other LoRaWAN devices, it may be that only limited packets are received by the single -channel gateway.*   
 
 As the pricing of LoRaWAN 8 channel gateways continues to fall in 2017, it is recommended to NOT use this type of implementation in the longer term.  For basic learning and demostrations, this configuraiton may prove to be helpful to further promote the benefits of LoRaWAN in general and The Things Network specifically.  For any form of a POC (Proof of concept), a proper 8 channel gateway should be used.
 
