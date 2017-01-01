@@ -20,7 +20,7 @@ In order to build the necessary two  devices, some basic soldering skills are re
 ### Limitations
 *This project is built using a single channel LoRaWAN gateway. Strictly-speaking, this is out-of-spec.  LoRaWAN specifications require at minimum 3 channels.   In order to use a single channel gateway, all nodes must include software modifications to limit usage of the same single channel as the gateway.*   
 
-As the pricing of LoRaWAN 8 channel gateways continues to fall in 2017, it is recommended to NOT use this type of implementation in the longer term.  For basic learning and demostrations, this configuraiton may prove to be help to further promote the benefits of LoRaWAN in general and The Things Network specifically.  For any form of a POC (Proof of concept), a proper 8 channel gateway should be used.
+As the pricing of LoRaWAN 8 channel gateways continues to fall in 2017, it is recommended to NOT use this type of implementation in the longer term.  For basic learning and demostrations, this configuraiton may prove to be helpful to further promote the benefits of LoRaWAN in general and The Things Network specifically.  For any form of a POC (Proof of concept), a proper 8 channel gateway should be used.
 
 ## Finished Product
 There are two recommended ways to build these devices:  As enclosed devices or as WeMOS D1 Mini stacks.  Building enclosed devices has the benefit of ruggedness for transportation and demonstrations.  For those looking for a rapid prototyping environment, a WeMos D1 Mini stack build is recommended.  Custom shields can be quickly created and tested using a modular hardware approach.  
