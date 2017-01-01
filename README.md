@@ -4,7 +4,7 @@ Created by Mark Troyer  -  31 December 2016
 
 Inspired by original code from Thomas Telkamp and Matthijs Kooijman  https://github.com/matthijskooijman/arduino-lmic/
 
-# Introduction
+## Introduction
 This respository explains how to get started with LoRaWAN and The Things Network at a cost of under $50 using readily available parts.   The build consists of a LoRaWAN gateway and a simple node that senses temperature, humidity and light levels using The Things Network (thethingsnetwork.org) crowdfunded infrastructure.
 
 The primary benefits of this build are as follows:
@@ -17,7 +17,7 @@ The primary benefits of this build are as follows:
 
 In order to build the necessary two  devices, some basic soldering skills are required.  The total build time is around 3 hours.
 
-# Finished Product
+## Finished Product
 There are two recommended ways to build these devices:  As enclosed devices or as WeMOS D1 Mini stacks.  Building enclosed devices has the benefit of ruggedness for transportation and demonstrations.  For those looking for a rapid prototyping environment, a WeMos D1 Mini stack build is recommended.  Custom shields can be quickly created and tested using a modular hardware approach.  Hot glue always helps as well to keep things in place!
 
 ![alt tag](20170101_142816.jpg)
@@ -31,7 +31,7 @@ The WeMos D1 Mini Stack device offers the ability to quickly test new hardware c
 ![alt tag](20161231_131910.jpg)
 
 
-# Bill of Materials
+## Bill of Materials
 All of the parts for these builds can be ordered through local electronics suppliers or directly though Chinese suppliers with either Ebay or AliExpress. Delivery to Europe and North Americas takes less than 15 days.  Below is a Bill of Materials suggested for this project:
 
 - Wemos D1 Mini (ESP8266) $3-5 - It is recommended to order 4 or 5 of these devices for all micro processor projects.  Even for devices that do not required WiFi, the ESP8266 price point can not be beaten.  
@@ -43,12 +43,12 @@ All of the parts for these builds can be ordered through local electronics suppl
 - Resistors: 10K, 4K7, 2K2, 1K -  It is best to order an assortment of through hole resistors if you do not already have them on hand.
 - 8.2cm wire antenna (nil) - I have used a coil copper antenna tuned for 868MHz.  Alternatively, an 8.2cm piece of wire will also work fine.
 
-# Hardware Schematic
+## Hardware Schematic
 The hardware schematic for the build is below.   All pins on the ESP8266 except D3/GPIO 0 are used.   9 of the 16 pins on the RFM95 are used.  Ignore the references to the RFM69 and 96.   There is still learning to be done with E-CAD !
 
 ![alt tag](LoRaWANTTNNode_schem.jpg)
 
-# Hardware build
+## Hardware build
 
 If you are building the device using a WeMos D1 Mini stack design, it is recommended to create 3 seperate shields as follows:
 
@@ -61,11 +61,11 @@ If you are building the device using a WeMos D1 Mini stack design, it is recomme
 
 Building enclosed devices can also be tricky.  Be to take your time and think through how connections will be made.   It is recommended to prototype assemblies first with single solder junctions or even a bit of hot glue to make sure all will fit together.  Desolding makes a mess!   You may need that extra RFM95 or WeMos board if you did not take the necessary time to plan your build.
 
-# Software for Node
+## Software for Node build
 
 There are two builds available for nodes.  The first works with ABP (Authentication by Personalization) using statically generated keys.   The second and recommended build works with OTAA (Over the Air Activation).  Note that constant work is being done on the https://github.com/matthijskooijman/arduino-lmic libraries and example code.   Over time, it may make more sense to retrofit some of the sensor code back into these libraries and examples.
 
-# Software for single-channel LoRaWAN gateway
+## Software for single-channel LoRaWAN gateway build
 
 Code for a single channel gateway can be found at https://github.com/things4u/ESP-1ch-Gateway-v3.0.   With the cost of 8 channel LoRaWAN gateways falling in 2017, it is recommended to try and use a proper gateway over time and not rely on single channel gateways.
 
