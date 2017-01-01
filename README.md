@@ -18,11 +18,11 @@ The primary benefits of this build are as follows:
 In order to build the necessary two  devices, some basic soldering skills are required.  The total build time is around 3 hours.
 
 ## Finished Product
-There are two recommended ways to build these devices:  As enclosed devices or as WeMOS D1 Mini stacks.  Building enclosed devices has the benefit of ruggedness for transportation and demonstrations.  For those looking for a rapid prototyping environment, a WeMos D1 Mini stack build is recommended.  Custom shields can be quickly created and tested using a modular hardware approach.  Hot glue always helps as well to keep things in place!
+There are two recommended ways to build these devices:  As enclosed devices or as WeMOS D1 Mini stacks.  Building enclosed devices has the benefit of ruggedness for transportation and demonstrations.  For those looking for a rapid prototyping environment, a WeMos D1 Mini stack build is recommended.  Custom shields can be quickly created and tested using a modular hardware approach.  
 
 ![alt tag](20170101_142816.jpg)
 
-Below are the internals of an enclosed device used for regular demostrations.  A simple project box and a prototyping breadboard allow for easy and quick assembly.  
+Below are the internals of an enclosed device used for regular demostrations.  A simple project box and a prototyping breadboard allow for easy and quick assembly.   Hot glue always helps as well to keep things in place!
 
 ![alt tag](20161231_130806.jpg)
 
