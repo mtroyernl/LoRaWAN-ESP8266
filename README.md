@@ -24,13 +24,9 @@ There are two recommended ways to build these devices:  As an enclosed devices o
 
 Below are the internals of an enclosed device used for regular travelling demostrations.  A simple project box and a prototyping breadboard allow for easy and quick assembly.  
 
-![alt tag](20161231_130806.jpg)
-
-The WeMos D1 Mini Stack device offers the ability to quickly test new hardware concepts through the use of a breadboard or custom shields.
-
 ![alt tag](20161231_130917.jpg)
 
-Seperate shields can me mixed and matched for different experiements. 
+The WeMos D1 Mini Stack device offers the ability to quickly test new hardware concepts through the use of a breadboard or custom shields.  Seperate shields can me mixed and matched for different experiements. 
 
 ![alt tag](20161231_131910.jpg)
 
@@ -54,7 +50,11 @@ The hardware schematic for the build is below.
 
 # Hardware build
 
-If you are building the device using a WeMos D1 Mini stack design, many of the devices connected to the WeMos process will need to be used on different proto shields.  If you are building a single channel TTN gateway, the LDR and temperature sensor can be ommited.   Keep the LED however so that you can see when LoRaWAN traffic is hitting your gateway.
+If you are building the device using a WeMos D1 Mini stack design, it is recommended to create 3 seperate shields as follows:
+
+- Shield for DHT22 Temperature/Humidity sensor.  These can also be purchased as finished shields or you can build your own.   If you build your own, it is important to us D4 (GPIO 02) for the signal with a 10K resistor pulled to 3.3v.   Note that D4/GPIO 02 on an ESP8266 should normally always be pulled high for normal and programming operation.   Therefore D4/GPIO 02 is the optimal pin to use for the DHT22.
+- Shield for LED light and LDR.   The LED should be connected to D0 and ground.  It is very useful to have an addressable LED in firmware to indicate status of sending/receiving packets.  As the single ADC port on the ESP8266 only works between 0v and 1v, a voltage divider needs to be built using 2K2 (3.3v) and 1K (GND) resistors.  With the LDR (1v) and a 4K7 (GND) in place, a good range of digitally values between 0 and 512 will result.
+- Shield for the RFM95.  This is the most complicated part of the build.  9 pins on the RFM95 tranciever module are required.  Unfortunaely, the pin holes on the RFM92 are 2mm apart where as typical prototyping breadboards are 2.54mm apart.  The result of this is that flexible core copper wire must be used to make the necessary connections to a prototyping breadboard or a header.
 
 # Software for Node
 
