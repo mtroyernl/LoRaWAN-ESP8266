@@ -20,7 +20,7 @@ In order to build the necessary 2 devices, some basic soldering skills are requi
 # Finished Product
 There are two recommended ways to build these devices:  As an enclosed devices or as WeMOS D1 Mini stacks.  Building enclosed devices has the benefit of ruggedness for transportation and demonstrations.  For those looking for a rapid prototyping environment, a WeMos D1 Mini stack build is recommended.  Custom shields can be quickly created and tested using a modular hardware approach.
 
-![alt tag](20161231_130729.jpg)
+![alt tag](20170101_142816.jpg)
 
 Below are the internals of an enclosed device used for regular travelling demostrations.  A simple project box and a prototyping breadboard allow for easy and quick assembly.  
 
@@ -56,6 +56,8 @@ If you are building the device using a WeMos D1 Mini stack design, it is recomme
 - Shield for LED light and LDR.   The LED should be connected to D0 and ground.  It is very useful to have an addressable LED in firmware to indicate status of sending/receiving packets.  As the single ADC port on the ESP8266 only works between 0v and 1v, a voltage divider needs to be built using 2K2 (3.3v) and 1K (GND) resistors.  With the LDR (1v) and a 4K7 (GND) in place, a good range of digitally values between 0 and 512 will result.
 - Shield for the RFM95.  This is the most complicated part of the build.  9 pins on the RFM95 tranciever module are required.  Unfortunaely, the pin holes on the RFM92 are 2mm apart where as typical prototyping breadboards are 2.54mm apart.  The result of this is that flexible core copper wire must be used to make the necessary connections to a prototyping breadboard or a header.
 
+![alt tag](20170101_143250.jpg)
+![alt tag](20170101_143750.jpg)
 # Software for Node
 
 # Software for single-channel LoRaWAN gateway
