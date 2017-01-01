@@ -39,14 +39,14 @@ The WeMos D1 Mini Stack device offers the ability to quickly test new hardware c
 ## Bill of Materials
 All of the parts for these builds can be ordered through local electronics suppliers or directly though Chinese suppliers with Ebay, AliExpress or others.  Below is a Bill of Materials suggested for this project:
 
-- Wemos D1 Mini (ESP8266) $3-5 - It is recommended to order 4 or 5 of these devices for all micro processor projects.  Even for devices that do not required WiFi, the ESP8266 price point can not be beaten.  
+- Wemos D1 Mini (ESP8266) $3-5 - It is recommended to order 4 or 5 of these devices for all micro processor projects.  Even for devices that do not required WiFi, the ESP8266 price point can not be beaten. The ESP8266 is also significantly faster than most Arduino boards but has fewer IO ports.
 - Wemos D1 Mini Shields $2 - Order at least 10 of these for prototyping if you want to go this route.
-- Prototyping breadboard $0.40 - Search for "double side prototype pcb tinned universal breadboard 5x7cm".  These are ideal and low cost Prototyping breadboards for any project built in a small box.  
-- RFM95 at 868MHz $9-12 - This is the basic LoRa module with a Semtech tranciever chip.  Be sure to get the version appropriate for your region (e.g. 868 for Europe, 915 for North America and Australia).  If you are in the EC, Google "ebay RFM95 868" to see whats available.  Note that modules come preinstalled with the appropriate firmware for each frequency region.   Double check that you are ordering the appropriate product for your region.  It is best to order at least 3 in case one arrives DOA or you fry one accidently.
+- Prototyping breadboard $0.40 - Search for "double side prototype pcb tinned universal breadboard 5x7cm".  These are ideal and low cost prototyping breadboards for any project built in a small box.  
+- RFM95 at 868MHz $9-12 - This is the basic LoRa module with a Semtech tranciever chip.  Be sure to get the version appropriate for your region (e.g. 868MHz for Europe, 915MHz for North America and Australia).  If you are in Europe, google "ebay RFM95 868" to see what's available.  Note that modules come pre-installed with the appropriate firmware for each frequency region.   Double check that you are ordering the appropriate product for your region.  It is best to order at least 3 in case one arrives DOA (Dead on Arrival) or you *fry* one accidently.
 - DHT22 Temperature/Humidity Sensor $4 - Order at least 2-3 of these.
 - Light-Dependent Resistor $0.50 - Normaly these come in lots of 20 or more.
-- Resistors: 10K, 4K7, 2K2, 1K -  It is best to order an assortment of through hole resistors if you do not already have them on hand.
-- 8.2cm wire antenna (nil) - I have used a coil copper antenna tuned for 868MHz.  Alternatively, an 8.2cm piece of wire will also work fine.
+- Resistors: 10K, 4K7, 2K2, 1K -  It is best to order an assortment of thru-hole resistors if you do not already have them on hand.
+- 8.2cm wire antenna - I used a coil copper antenna tuned for 868MHz.  Alternatively, an 8.2cm piece of wire will also work fine.
 
 ## Hardware Schematic
 The hardware schematic for the build is below.   All pins on the ESP8266 except D3/GPIO 0 are used.   9 of the 16 pins on the RFM95 are used.  Ignore the references to the RFM69 and 96.   There is still learning to be done with E-CAD !
@@ -64,15 +64,17 @@ If you are building the device using a WeMos D1 Mini stack design, it is recomme
 ![alt tag](20170101_143750.jpg)
 ![alt tag](20170101_143250.jpg)
 
-Building enclosed devices can also be tricky.  Be to take your time and think through how connections will be made.   It is recommended to prototype assemblies first with single solder junctions or even a bit of hot glue to make sure all will fit together.  Desolding makes a mess!   You may need that extra RFM95 or WeMos board if you did not take the necessary time to plan your build.
+Building enclosed devices can also be tricky.  Be sure to take your time and think through how connections will be made before soldering.   It is recommended to prototype assemblies first with light single solder junctions or even a bit of hot glue to make sure all will fit together.  Desolding makes a mess!   You may need that extra RFM95 or WeMos board if you did not take the necessary time to plan your build.
 
 ## Software for Node build
 
-There are two builds available for nodes.  The first works with ABP (Authentication by Personalization) using statically generated keys.   The second and recommended build works with OTAA (Over the Air Activation).  Note that constant work is being done on the https://github.com/matthijskooijman/arduino-lmic libraries and example code.   Over time, it may make more sense to retrofit some of the sensor code back into these libraries and examples.
+There will be two software builds available for nodes.  Currently only the ABP version is available.  The first works with ABP (Authentication by Personalization) using statically generated keys.   The second and recommended build works with OTAA (Over the Air Activation).  
+
+Note that constant work is being done on the https://github.com/matthijskooijman/arduino-lmic libraries and example code.   Over time, it may make more sense to retrofit some of the sensor code back into these libraries and examples.
 
 ## Software for single-channel LoRaWAN gateway build
 
-Code for a single channel gateway can be found at https://github.com/things4u/ESP-1ch-Gateway-v3.0.   With the cost of 8 channel LoRaWAN gateways falling in 2017, it is recommended to try and use a proper gateway over time and not rely on single channel gateways.
+Code for a single channel gateway can be found at https://github.com/things4u/ESP-1ch-Gateway-v3.0.   Please be sure to re-read the Limitations section at the beginning of this document.
 
 Note that the hardware build in this example assumes the following mappings.
 ```
