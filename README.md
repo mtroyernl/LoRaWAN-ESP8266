@@ -24,7 +24,7 @@ There are two recommended ways to build these devices:  As an enclosed devices o
 
 Below are the internals of an enclosed device used for regular travelling demostrations.  A simple project box and a prototyping breadboard allow for easy and quick assembly.  
 
-![alt tag](20161231_130917.jpg)
+![alt tag](20161231_130806.jpg)
 
 The WeMos D1 Mini Stack device offers the ability to quickly test new hardware concepts through the use of a breadboard or custom shields.  Seperate shields can me mixed and matched for different experiements. 
 
