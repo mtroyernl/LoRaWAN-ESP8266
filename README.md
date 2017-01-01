@@ -37,7 +37,7 @@ The WeMos D1 Mini Stack device offers the ability to quickly test new hardware c
 
 
 ## Bill of Materials
-All of the parts for these builds can be ordered through local electronics suppliers or directly though Chinese suppliers with either Ebay or AliExpress. Delivery to Europe and North Americas takes less than 15 days.  Below is a Bill of Materials suggested for this project:
+All of the parts for these builds can be ordered through local electronics suppliers or directly though Chinese suppliers with Ebay, AliExpress or others.  Below is a Bill of Materials suggested for this project:
 
 - Wemos D1 Mini (ESP8266) $3-5 - It is recommended to order 4 or 5 of these devices for all micro processor projects.  Even for devices that do not required WiFi, the ESP8266 price point can not be beaten.  
 - Wemos D1 Mini Shields $2 - Order at least 10 of these for prototyping if you want to go this route.
