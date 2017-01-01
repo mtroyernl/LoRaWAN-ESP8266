@@ -22,7 +22,7 @@ There are two recommended ways to build these devices:  As enclosed devices or a
 
 ![alt tag](20170101_142816.jpg)
 
-Below are the internals of an enclosed device used for regular demostrations.  A simple project box and a prototyping breadboard allow for easy and quick assembly.   Hot glue always helps as well to keep things in place!
+Below are the internals of an enclosed device used for regular demonstrations.  A simple project box and a prototyping breadboard allow for easy and quick assembly.   Hot glue always helps as well to keep things in place!
 
 ![alt tag](20161231_130806.jpg)
 
